@@ -473,12 +473,14 @@ margin-left: 31%;
   background-color: whitesmoke; 
 }
 
-input[type=text] {
+input[type=text1] {
     width: 130px;
-    -webkit-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.6s ease-in-out;
     transition: width 0.4s ease-in-out;
+    border-radius: 20px;
   }
   
   /* When the input field gets focus, change its width to 100% */
-  input[type=text]:focus {
+  input[type=text1]:focus{
     width: 20%;
+    outline: none;

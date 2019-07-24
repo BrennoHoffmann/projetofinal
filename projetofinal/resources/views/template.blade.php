@@ -30,7 +30,7 @@
                 </ul>
             </div>
 
-            <input type="text" name="search" placeholder="Search..">
+            <input type="text1" name="search1" placeholder="Search..">
 
 
             <div class="d-flex carrinho justify-content-around">
@@ -163,11 +163,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-<<<<<<< HEAD
-
-@section('content')
-=======
->>>>>>> 2e8c97167fdab63ca3f23b7ea79bad5d084682cf
 </body>
 
 </html>
