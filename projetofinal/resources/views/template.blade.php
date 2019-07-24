@@ -23,9 +23,9 @@
             <div id="cssmenu">
                 <ul>
                     
-                    <li><a href="custom">Outlet</a></li>
+                    <li><a href="outlet">Outlet</a></li>
                     <li><a href="about">About</a></li>
-                    <li><a href="cadastrar">Products</a></li>
+                    <li><a href="products">Products</a></li>
                     <li><a href="/" id="homestyle"><i class="fa fa-home"></i>Home</a></li>
                 </ul>
             </div>

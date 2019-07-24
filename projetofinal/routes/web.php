@@ -15,11 +15,18 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/products', function () {
+    return view('products');
+});
+
+
+Route::get('/outlet', function () {
+    return view('outlet');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/produtos', 'ProdutosController@Produtos')->name('produtos');
 
 Route::get('/about', 'AboutController@about')->name('about');
 
