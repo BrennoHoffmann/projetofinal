@@ -23,5 +23,7 @@ Route::get('/produtos', 'ProdutosController@Produtos')->name('produtos');
 
 Route::get('/about', 'AboutController@about')->name('about');
 
+Route::get('/logout', 'LoginController@logout');
+
 
 
