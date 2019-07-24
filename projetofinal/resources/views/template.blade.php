@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield ('title')</title>
+    <title>@yield('titulo')</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
-<body>
 
 <body>
 
     <header>
         <nav class="navbar navbar-expand-lg  d-flex justify-content-between">
             <a href="/">
-                <img src="{{asset('Imagens/polvopi.png')}}" alt="logo" width="150px" height="75px">
+                <img src="{{asset('imagens/polvopi.png')}}" alt="logo" width="150px" height="75px">
             </a>
 
             <div id="cssmenu">
                 <ul>
-                    <li><a href="outlet">Outlet</a></li>
+                    
+                <li><a href="outlet">Outlet</a></li>
                     <li><a href="about">About</a></li>
                     <li><a href="products">Products</a></li>
                     <li><a href="/" id="homestyle"><i class="fa fa-home"></i>Home</a></li>
@@ -162,7 +163,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+<<<<<<< HEAD
 
 @section('content')
+=======
+>>>>>>> 2e8c97167fdab63ca3f23b7ea79bad5d084682cf
 </body>
+
 </html>

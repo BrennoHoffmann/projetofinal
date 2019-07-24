@@ -30,5 +30,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/about', 'AboutController@about')->name('about');
 
+Route::get('/logout', 'LoginController@logout');
+
 
 
