@@ -11,17 +11,22 @@
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
+=======
+Route::get('/',function(){
+>>>>>>> 2a8acda7b5317eb196422e251de3dce0e6b85686
     return view('home');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/produtos', 'ProdutosController@Produtos')->name('produtos');
+Route::get('/', 'HomeController@index');
 
-Route::get('/about', 'AboutController@about')->name('about');
+Route::get('/produtos', 'ProdutosController@produtos');
+
+Route::get('/about', 'AboutController@about');
 
 
 
