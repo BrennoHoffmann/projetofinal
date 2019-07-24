@@ -29,14 +29,17 @@
                     <li><a href="/" id="homestyle"><i class="fa fa-home"></i>Home</a></li>
                 </ul>
             </div>
+
+            <input type="text" name="search" placeholder="Search..">
+
+
             <div class="d-flex carrinho justify-content-around">
                 <a href="shoppingCart">
                     <img src="{{asset('imagens/carrinho02.png')}}" alt="logo" width="40px" height="40px" href="buys">
                 </a>
 
                 <div>
-                    <!-- <a href="/login"><button type="button" class="btn btn-primary btn-sm btnlogin">Login</button></a>
-    <a href="{{route('register')}}"><button type="button" class="btn btn-secondary btn-sm btnregister">Register</button></a> -->
+
 
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
@@ -77,7 +80,7 @@
 
     </header>
     <br>
-    @yield('conteudo')
+    @yield('content')
 
 
     <br>
@@ -148,9 +151,6 @@
     </footer>
 
 
-
-
-
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -163,6 +163,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+<<<<<<< HEAD
+
+@section('content')
+=======
+>>>>>>> 2e8c97167fdab63ca3f23b7ea79bad5d084682cf
 </body>
 
 </html>
