@@ -11,18 +11,15 @@
 |
 */
 
-<<<<<<< HEAD
-Route::get('/', function () {
-=======
+
 Route::get('/',function(){
->>>>>>> 2a8acda7b5317eb196422e251de3dce0e6b85686
     return view('home');
 });
 
 Auth::routes();
 
 
-Route::get('/', 'HomeController@index');
+
 
 Route::get('/produtos', 'ProdutosController@produtos');
 
