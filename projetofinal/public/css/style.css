@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cousine|Julius+Sans+One|Staatliches|Ultra|Unica+One&display=swap');
+
+
+.imgCarr img{
+    height: 85vh;
+    padding: 0;
+    
+
+}
+.menu {
+    justify-content: space-around;
+}
+
+section .custons {
+    margin: solid white 1px;
+    height: 100%;
+}
+.taglogin{
+        display: flex;
+    justify-content: flex-end;
+    width: 25%;
+
+}
+
+.search1{
+    padding-right: 90px;
+    padding-left: 90px;
+    display: flex;
+    width: 60%;
+}
+   
+
+
+@media(max-width:420px){
+    .search{
+        display: none;
+    }
+
+    .taglogin{
+        width: 25%;
+
+    }
+}
+
+
+.customCard {
+    margin-top: 40px ;
+     width: 18rem;
+    -webkit-box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.75) !important;
+    -moz-box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.75) !important ; 
+}
+.produtosBanco{
+    margin-top: 40px;
+}
+
+.carrosel1{
+    background-color:#3594c3;
+    justify-content: first baseline;
+}
+
+.cardsection{
+    justify-content: center;
+    display: flex;
+    
+}
+
+
+/* CARDS ANIMADOS PARA PRODUTOS EM PROMOÇÃO */
+
+.flipcardpalmeiras{
+  margin-top: 30px;
+  font-family: 'Unica One', sans-serif;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 800px; /* Remove this if you don't want the 3D effect */
+   
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:#3594c3;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 50px;
+    height: 200px;
+  }
+
+#botaoregister{
+  background-color: white;
+}
+
+#botaologin{
+  background-color: #297EFE;
+}
+
+  .cardpromotion{
+      display: flex;
+      justify-content: space-around;
+  }
+  
+    
+    #header-wrapper {
+      width: 330px;
+      margin: auto;
+      top: 50%;
+      left: 50%;
+      padding-top: 180px;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+  }
+  
+  .design span {
+      font-size: 50px;
+      color:#3594c3;
+      font-weight: bold;
+      letter-spacing: 2px;
+  }
+  
+  .pluscode {
+      padding-top: 58px;
+      width: 270px;
+  }
+  
+  .plus {
+      font-size: 60px;
+      color: #16528e;
+      font-weight: bold;
+     margin-top: 50px;
+  
+  }
+  
+  .code {
+      font-size: 40px;
+      color: #a3c5bf;
+   
+      font-weight: bold;
+      letter-spacing: 2px;
+  
+  
+  }
+  
+  #header-wrapper p {
+      font-size: 14px;
+      width: 170px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+  
+  }
+  
+  
+  .design{
+    display: flex;
+    margin-left: 420px;
+    justify-content: center;
+  }
+  
+  .design span{
+    animation: topToBottom 12.5s linear infinite 0s;
+    -ms-animation: topToBottom 12.5s linear infinite 0s;
+    -webkit-animation: topToBottom 12.5s linear infinite 0s;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+      
+  }
+  .design span:nth-child(2){
+    animation-delay: 2.5s;
+    -ms-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+  }
+  .design span:nth-child(3){
+    animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+  }
+  .design span:nth-child(4){
+    animation-delay: 7.5s;
+    -ms-animation-delay: 7.5s;
+    -webkit-animation-delay: 7.5s;
+  }
+  .design span:nth-child(5){
+    animation-delay: 10s;
+    -ms-animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+  }
+  
+  /*topToBottom Animation*/
+  @-moz-keyframes topToBottom{
+    0% { opacity: 0; }
+    5% { opacity: 0; -moz-transform: translateY(-50px); }
+    10% { opacity: 1; -moz-transform: translateY(0px); }
+    25% { opacity: 1; -moz-transform: translateY(0px); }
+    30% { opacity: 0; -moz-transform: translateY(50px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  @-webkit-keyframes topToBottom{
+    0% { opacity: 0; }
+    5% { opacity: 0; -webkit-transform: translateY(-50px); }
+    10% { opacity: 1; -webkit-transform: translateY(0px); }
+    25% { opacity: 1; -webkit-transform: translateY(0px); }
+    30% { opacity: 0; -webkit-transform: translateY(50px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  @-ms-keyframes topToBottom{
+    0% { opacity: 0; }
+    5% { opacity: 0; -ms-transform: translateY(-50px); }
+    10% { opacity: 1; -ms-transform: translateY(0px); }
+    25% { opacity: 1; -ms-transform: translateY(0px); }
+    30% { opacity: 0; -ms-transform: translateY(50px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  
+.letralogo {
+  color: black;
+  font-family: 'Unica One', sans-serif;
+}
+
+#linha{
+  background-color: blue;
+}
+
+.btn{
+  border-radius: 30px;
+  height: 35px;
+}
+.input{
+  border-radius: 30px;
+  height: 35px;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+#cssmenu{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+#cssmenu ul {
+  display: flex; /* A key part of our menu, displays items side by side, and allows reversing them */
+  flex-direction: row-reverse; /* Reverse the items */
+
+}
+
+#cssmenu-container {
+  height: 220px;
+  background-color: #CEE3F8;
+  display: flex;
+  justify-content: center;
+}
+
+/* Menu container */
+#cssmenu {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1em;
+  border-radius: 2px; /* Little curvature in the borders */
+}
+
+/* Icons */
+#cssmenu i {
+  transform: scale(1.4);
+}
+
+/* Menu */
+#cssmenu ul {
+  display: flex; /* A key part of our menu, displays items side by side, and allows reversing them */
+  flex-direction: row-reverse; /* Reverse the items */
+  /* Reset styles, overwrite browser defaults */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#cssmenu ul li {
+  margin: 0;
+}
+#cssmenu ul li a {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 12px 30px 12px 45px; /* Adjusting padding to get the proper space */
+  margin-left: -20px; /* Pull the items to the left, so the rounded right side will get over them */
+  color: white;
+  background-color: #428EFE;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0 100px 100px 0; /* Get the right side rounded */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Apply the shadow */
+}
+#cssmenu ul li a#homestyle{
+  border-radius: 40px;
+}
+
+#cssmenu ul li:hover a {
+  background-color: #297EFE;
+}
+
+/* Remove the shadow for first item, last in the right side when it gets reversed */
+#cssmenu ul li:first-child a {
+  box-shadow: none;
+}
+
+/* Active item is a bit different */
+#cssmenu ul li.active a {
+  color: #428EFE;
+  background-color: #EEF5FF;
+}
+
+/* Remove the shadow for the active's next item, to match the design more accurately */
+#cssmenu ul li.active + li a {
+  box-shadow: none;
+}
+.carrinho{
+  width: 240px;
+}
+
+#produtoshome{
+  display: flex;
+  justify-content: center;
+  font-family: 'Unica One', cursive;
+}
+/*classe para mexer nos cards do passo a passo e titulo*/
+ .passoApasso{
+  
+  display:flex;
+  margin-bottom: 15%; 
+  justify-content: center;
+  
+} 
+.tituloPasso{
+  text-align: center;
+  margin-bottom: 5%;
+}
+.cardPasso{
+  margin-top:15%;
+}
+
+.maisvendido{
+width: 500px;
+height: 500px;
+display: flex;
+justify-content: center;
+margin-left: 31%;
+}
+
+#botaobuy{
+  z-index: 2;
+  background-color: whitegit ;
+  align-self: flex-end;
+  height: 40px;
+  width: 90px;
+}
+
+.botaocarousel{
+  height: 256px;
+}
+/*css feito para parte de customização de camisetas*/
+
+.menu{
+      display: flex;
+  
+  }
+  div #collor img {
+   
+      width: 30%;
+      height: 5vh;
+      justify-content: flex-end;
+  
+      flex-direction: column;
+  }
+  #collor{
+      width: 50%;
+      height: 10vh;
+  }
+  .camisetas {
+      width:100%;
+      height: 50%;
+  }
+  input .still{
+      width: 100%;
+      height: 20vh;
+  }
+  .camisetas img{
+     width:30%;
+  }
+  .figure{
+      width: 50%;
+      height: 20vh;
+  }
+  
+  .camiseta{
+  
+      height: 50vh;
+      background-color:black;
+  }
+
+#homestyle{
+  border-radius: 40px;
+}
+
+.imageabout{
+  justify-content: left;
+  display: flex-end;
+  margin-left: 700px;
+
+}
+
+.lançamentosdiv{
+  size: 50%;
+  border-radius:100%;
+  height: 400px;
+  
+}
+
+.backhome{
+  background-color: cadetblue;
+  
+}
+
+.backhomelan{
+  background-color: cadetblue;
+  height: 361px;
+}
+
+.footerr{
+  background-color:cadetblue;
+}
+
+.footerrr{
+  background-color: whitesmoke; 
+}
