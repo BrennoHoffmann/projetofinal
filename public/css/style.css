@@ -478,5 +478,10 @@ input[type=text1] {
   input[type=text1]:focus{
     width: 20%;
     outline: none;
+  }
 
-    
+  .fundoabout{
+    background-color: cadetblue;
+    height:188px;
+    width:  ;
+  }
