@@ -13,7 +13,15 @@ class Types extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('types', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name');
+            
+            
+            
+            $table->rememberToken();
+            $table->timestamps();
+        });
     }
 
     /**
