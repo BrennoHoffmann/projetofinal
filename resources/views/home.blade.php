@@ -2,6 +2,18 @@
 
 @section('content')
 
+<ul class="slider">
+     <li>
+           <img src="images/1.jpg" />
+     </li>
+     <li>
+           <img src="images/2.jpg" />
+     </li>
+     <li>
+           <img src="images/3.jpg" />
+     </li>
+ </ul>
+
 
 
 
