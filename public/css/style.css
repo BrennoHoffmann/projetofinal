@@ -32,17 +32,11 @@ section .custons {
    
 
 
-@media(max-width:420px){
-    .search{
-        display: none;
+@media(max-width:320px){
+    #cssmenu{
+      display: none;
     }
-
-    .taglogin{
-        width: 25%;
-
-    }
-}
-
+  }
 
 .customCard {
     margin-top: 40px ;
