@@ -107,7 +107,7 @@
                 <hr class="clearfix w-100 d-md-none pb-3">
 
                 <div class="col-md-3 mb-md-0 mb-3 flipcardpalmeiras">
-                    <h5 class="text-uppercase">fornecedores</h5>
+                    <h5 class="text-uppercase">lojas fisicas</h5>
                     <ul class="list-unstyled">
                         <li>
                             <a href="#!">renner</a>
