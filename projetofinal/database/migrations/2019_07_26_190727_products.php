@@ -15,6 +15,7 @@ class Products extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->biginteger('type_id')->references('id')->on('type');
             $table->string('name');
             $table->decimal('price', 8, 2);
             $table->text('description');
