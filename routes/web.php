@@ -32,5 +32,10 @@ Route::get('/about', 'AboutController@about')->name('about');
 
 Route::get('/logout', 'LoginController@logout');
 
+Route::get('/cadastrar', 'CadastrarController@rotaCadastrar');
+Route::post('/cadastrar', 'CadastrarController@Cadastrar');
 
+Route::get('/aleatorio', 'CadastrarController@index');
+
+Route::get('/busca', 'CadastrarController@busca');
 
