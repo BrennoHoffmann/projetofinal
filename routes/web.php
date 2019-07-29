@@ -39,3 +39,11 @@ Route::get('/aleatorio', 'CadastrarController@index');
 
 Route::get('/busca', 'CadastrarController@busca');
 
+// Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin']], function(){
+//     Route::get('/cadastrar', function(){
+//         return view('cadastrar');
+
+//     });
+// });
+
+

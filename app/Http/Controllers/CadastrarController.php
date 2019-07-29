@@ -10,7 +10,7 @@ class CadastrarController extends Controller
 {
     public function rotaCadastrar(){
         $tipos = Types::all();
-        return view('/cadastrar')->with('tipos', $tipos);
+        return view('/cadastrar')->with('type', $tipos);
     }
 
     public function Cadastrar(Request $request){
@@ -59,7 +59,7 @@ class CadastrarController extends Controller
         $image = Cadastrar::where('description','LIKE','%'.$search.'%')->get();
         $tipos = Types::all();
 
-        return view('/aleatorio')->with('tipos',$tipos)->with('imagens', $imagens);
+        return view('/aleatorio')->with('type',$tipos)->with('imagens', $imagens);
 
     }
 
