@@ -32,18 +32,18 @@ Route::get('/about', 'AboutController@about')->name('about');
 
 Route::get('/logout', 'LoginController@logout');
 
-Route::get('/cadastrar', 'CadastrarController@rotaCadastrar');
-Route::post('/cadastrar', 'CadastrarController@Cadastrar');
+// Route::get('/cadastrar', 'CadastrarController@rotaCadastrar');
+// Route::post('/cadastrar', 'CadastrarController@Cadastrar');
 
 Route::get('/aleatorio', 'CadastrarController@index');
 
 Route::get('/busca', 'CadastrarController@busca');
 
-// Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin']], function(){
-//     Route::get('/cadastrar', function(){
-//         return view('cadastrar');
+Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin']], function(){
+    Route::get('/cadastrar', function(){
+        return view('cadastrar');
 
-//     });
-// });
+    });
+});
 
 

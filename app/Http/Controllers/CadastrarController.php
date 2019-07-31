@@ -57,9 +57,9 @@ class CadastrarController extends Controller
         $search = $request->input('search');
         $imagens = Cadastrar::where('name','LIKE','%'.$search.'%')->get();
         $image = Cadastrar::where('description','LIKE','%'.$search.'%')->get();
-        $tipos = Types::all();
+        $type = Types::all();
 
-        return view('/aleatorio')->with('type',$tipos)->with('imagens', $imagens);
+        return view('/aleatorio')->with('type',$type)->with('imagens', $imagens);
 
     }
 

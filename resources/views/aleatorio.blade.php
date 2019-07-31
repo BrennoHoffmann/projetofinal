@@ -23,7 +23,7 @@
       
     <select name="search_tipos" id="search_tipos">
     <option disabled selected> selecione uma categoria</option>
-    @foreach($tipos as $tipo)
+    @foreach($type as $tipo)
             <option name="type" value="{{$tipo->id}}">{{$tipo->name}}</option>
     @endforeach
     </select>
