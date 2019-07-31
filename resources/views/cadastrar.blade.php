@@ -38,8 +38,8 @@
         </div>
         <select name="type_id" id="type_id">
         <option disabled selected>Escolha uma opção</option>
-           @if(isset($tipos))
-           @foreach($tipos as $tipo)
+           @if(isset($type))
+           @foreach($type as $tipo)
             <option name="type" value="{{$tipo->id}}">{{$tipo->name}}</option>
             @endforeach
             @endif

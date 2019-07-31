@@ -28,8 +28,9 @@ Route::get('/about', 'AboutController@about')->name('about');
 
 Route::get('/logout', 'LoginController@logout');
 
-Route::get('/cadastrar', 'CadastrarController@rotaCadastrar');
-Route::post('/cadastrar', 'CadastrarController@Cadastrar');
+
+// Route::get('/cadastrar', 'CadastrarController@rotaCadastrar');
+// Route::post('/cadastrar', 'CadastrarController@Cadastrar');
 
 //Route::get('/aleatorio', 'CadastrarController@index');
 
@@ -46,4 +47,33 @@ Route::post('/','HomeController@product');
 Route::get('/home', 'HomeController@product');
 Route::post('/home','HomeController@product');
 
+<<<<<<< HEAD
 Route::get('/knowMore/{id}', 'HomeController@knowMore');
+=======
+
+Route::get('/index',function(){
+    return view('painel.index');
+})->middleware('admin');
+
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
+
+
+
+
+
+
+
+// Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin']], function(){
+//     Route::get('/cadastrar', function(){
+//         return view('cadastrar');
+
+//     });
+// });
+
+Route::post('add', "CardController@add");
+
+Route::get('/cart/add/{idProduct}', "CardController@add");
+Route::get('/cart', "CardController@viewCart");
+>>>>>>> e2906a43584f853ee31c54e11073f2af18df4033

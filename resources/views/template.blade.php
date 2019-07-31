@@ -41,7 +41,7 @@
             </form>
            
             <div class="d-flex carrinho justify-content-around">
-                <a href="shoppingCart">
+                <a href="shopcart">
                     <img src="{{asset('imagens/carrinho02.png')}}" alt="logo" width="40px" height="40px" href="buys">
                 </a>
 
