@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
 Route::get('/products', function () {
     return view('products');
 });
@@ -26,7 +22,7 @@ Route::get('/outlet', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
 
 Route::get('/about', 'AboutController@about')->name('about');
 
@@ -35,7 +31,19 @@ Route::get('/logout', 'LoginController@logout');
 Route::get('/cadastrar', 'CadastrarController@rotaCadastrar');
 Route::post('/cadastrar', 'CadastrarController@Cadastrar');
 
-Route::get('/aleatorio', 'CadastrarController@index');
+//Route::get('/aleatorio', 'CadastrarController@index');
 
-Route::get('/busca', 'CadastrarController@busca');
+//Route::post('/aletorio', 'CadastrarController@buscar');
 
+//Route::get('/aleatorio', 'CadastrarController@buscar');
+
+Route::get('/search', 'CadastrarController@search');
+Route::post('/search', 'CadastrarController@search');
+
+Route::get('/', 'HomeController@product');
+Route::post('/','HomeController@product');
+
+Route::get('/home', 'HomeController@product');
+Route::post('/home','HomeController@product');
+
+Route::get('/knowMore/{id}', 'HomeController@knowMore');

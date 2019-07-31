@@ -17,19 +17,19 @@ class CadastrarController extends Controller
         
         $arquivo = $request->file('image');
         
-        if(empty($arquivo)){
-             abort(400, 'nenhum arquivo foi enviado');
-         }
-
+        // if(empty($arquivo)){
+        //      abort(400, 'nenhum arquivo foi enviado');
+        //  }
+            
         $nomePasta = 'uploads';
 
         $arquivo->storePublicly($nomePasta);
         $caminhoAbsoluto = public_path()."/storage/$nomePasta";
 
         $nomeArquivo = $arquivo->getClientOriginalName();
-
+        
         $salvarNoBanco = "storage/$nomePasta/$nomeArquivo";
-
+            
         $arquivo->move($caminhoAbsoluto, $nomeArquivo);
 
         Cadastrar::create([
@@ -40,7 +40,7 @@ class CadastrarController extends Controller
             'name'=>$request->input('name')
         ]);
 
-        return redirect('/aleatorio');
+        return redirect('/cadastrar');
 
     }
 
@@ -51,17 +51,27 @@ class CadastrarController extends Controller
         return view('aleatorio')->with('imagens',$photos);
 
     }
+    // public function busca(){
+    //     return view('/busca');
+    //}
 
-    public function busca(Request $request){
+    public function search(Request $request){
 
         $search = $request->input('search');
-        $imagens = Cadastrar::where('name','LIKE','%'.$search.'%')->get();
-        $image = Cadastrar::where('description','LIKE','%'.$search.'%')->get();
-        $tipos = Types::all();
+        //$dados = Cadastrar::where('name','LIKE','%'.$search.'%')->get();
+        $data = Types::where('name','LIKE', '%'.$search.'%')->first();
+        $idSearch = $data->id;
+        $productSearch = Cadastrar::where('type_id','=',$idSearch)->get();
+                
+        //$image = Cadastrar::where('description','LIKE','%'.$search.'%')->get();
+        $types = Cadastrar::all();
+        
 
-        return view('/aleatorio')->with('tipos',$tipos)->with('imagens', $imagens);
+        return view('/search')->with('data',$productSearch);
 
     }
+ 
+
 
 
 }

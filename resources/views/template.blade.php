@@ -10,6 +10,10 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/components/javascriptpersonalizado.js">
+
+    </script>
 </head>
 
 <body>
@@ -22,17 +26,20 @@
 
             <div id="cssmenu">
                 <ul>
-                    
-                <li><a href="outlet">Outlet</a></li>
+
+                    <li><a href="outlet">Outlet</a></li>
                     <li><a href="about">About</a></li>
                     <li><a href="products">Products</a></li>
                     <li><a href="/" id="homestyle"><i class="fa fa-home"></i>Home</a></li>
                 </ul>
             </div>
+            <form action="/busca" method="POST" id="pesquisa">
+                @csrf
+                <input type="text" name="search" id="seacher" placeholder="you seek...">
+                <input type="submit" name="enviar" value="search">
 
-            <input type="text1" name="search1" placeholder="Search..">
-
-
+            </form>
+           
             <div class="d-flex carrinho justify-content-around">
                 <a href="shoppingCart">
                     <img src="{{asset('imagens/carrinho02.png')}}" alt="logo" width="40px" height="40px" href="buys">
@@ -82,7 +89,7 @@
     <br>
     @yield('content')
 
-
+    
     <br>
     <br>
     <br>
