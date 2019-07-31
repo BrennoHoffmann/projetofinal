@@ -1,0 +1,29 @@
+  /*view knowmore customization*/
+  #name{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+#description{
+    display:flex;
+    justify-content:space-around; 
+}
+.price-description{
+    flex-direction: column;
+    /* background-color:black; */
+    /* color: aliceblue; */
+    width: 40%;
+}
+.boxImage{
+    border:solid 1px;
+    width: 40%;
+    justify-content: center;
+    border-radius: 2%;
+}
+.imagePosition1{
+    /* width: 100%; */
+    margin-left: 23%;
+}
+
+
