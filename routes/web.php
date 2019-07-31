@@ -32,6 +32,10 @@ Route::get('/about', 'AboutController@about')->name('about');
 
 Route::get('/logout', 'LoginController@logout');
 
+Route::get('/shopcard', function () {
+    return view('shopcard');
+});
+
 // Route::get('/cadastrar', 'CadastrarController@rotaCadastrar');
 // Route::post('/cadastrar', 'CadastrarController@Cadastrar');
 
@@ -46,4 +50,7 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin']], function(){
     });
 });
 
+Route::post('add', "CardController@add");
 
+Route::get('/cart/add/{idProduct}', "CardController@add");
+Route::get('/cart', "CardController@viewCart");
