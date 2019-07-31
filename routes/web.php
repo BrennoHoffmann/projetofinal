@@ -39,11 +39,26 @@ Route::get('/aleatorio', 'CadastrarController@index');
 
 Route::get('/busca', 'CadastrarController@busca');
 
-Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin']], function(){
-    Route::get('/cadastrar', function(){
-        return view('cadastrar');
 
-    });
-});
+Route::get('/index',function(){
+    return view('painel.index');
+})->middleware('admin');
+
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
+
+
+
+
+
+
+
+// Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin']], function(){
+//     Route::get('/cadastrar', function(){
+//         return view('cadastrar');
+
+//     });
+// });
 
 
