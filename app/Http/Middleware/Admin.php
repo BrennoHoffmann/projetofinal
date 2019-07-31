@@ -16,11 +16,11 @@ class Admin
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::check() && Auth::user()->isAdmin()){
-            return $next($request);
+        $user = Auth::user();
+        if($user == null || $user->nivel_user != 0){
+            return redirect('/home');
         }
-       
-       return redirect('home');
+        return $next($request);
         
     }
 }
