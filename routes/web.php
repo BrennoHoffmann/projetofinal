@@ -32,9 +32,6 @@ Route::get('/about', 'AboutController@about')->name('about');
 
 Route::get('/logout', 'LoginController@logout');
 
-Route::get('/shopcard', function () {
-    return view('shopcard');
-});
 
 // Route::get('/cadastrar', 'CadastrarController@rotaCadastrar');
 // Route::post('/cadastrar', 'CadastrarController@Cadastrar');
