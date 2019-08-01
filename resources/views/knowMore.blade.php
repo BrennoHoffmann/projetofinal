@@ -12,18 +12,19 @@
         <img class="imagePosition1" src="{{asset($query->image)}}" alt="">
     </div>
     <div class="price-description">
-        <div>
+        <div class="spaceDesc">
             <p>
                 <h4> <em> description of your product</em></h4>
             </p>
-            {{$query->description}}
+            -  {{$query->description}}
         </div>
         <hr>
-        <div>
+        <div class="spacePrice">
             <p><em>R$<em> {{$query->price}}</p>
+            
         </div>
         <div>
-            <input type="submit" value="Buy Now">
+        <input type="submit" value="Buy Now">
         </div>
     </div>
 </section>

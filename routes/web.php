@@ -29,8 +29,8 @@ Route::get('/about', 'AboutController@about')->name('about');
 Route::get('/logout', 'LoginController@logout');
 
 
-// Route::get('/cadastrar', 'CadastrarController@rotaCadastrar');
-// Route::post('/cadastrar', 'CadastrarController@Cadastrar');
+Route::get('/cadastrar', 'CadastrarController@rotaCadastrar');
+Route::post('/cadastrar', 'CadastrarController@Cadastrar');
 
 //Route::get('/aleatorio', 'CadastrarController@index');
 
@@ -56,6 +56,20 @@ Route::get('/index',function(){
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
+
+//routes para atualizar o produto
+
+Route::get('upDate/{id}','UpDateController@upDate');
+Route::post('upDate/{id}','UpDateController@upDate');
+
+Route::get('productsUPDATE','UpDateController@list');
+Route::post('productsUPDATE','UpDateController@list');
+
+Route::get('upDate/{id}','UpDateController@toChange');
+Route::put('upDate/{id}','UpDateController@changing');
+
+Route::get('delete/{id}','UpDateController@delete');
+Route::delete('delete/{id}','UpDateController@showDelete');
 
 
 

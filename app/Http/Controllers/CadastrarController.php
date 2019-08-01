@@ -58,7 +58,6 @@ class CadastrarController extends Controller
     public function search(Request $request){
 
         $search = $request->input('search');
-<<<<<<< HEAD
         //$dados = Cadastrar::where('name','LIKE','%'.$search.'%')->get();
         $data = Types::where('name','LIKE', '%'.$search.'%')->first();
         $idSearch = $data->id;
@@ -69,15 +68,10 @@ class CadastrarController extends Controller
         
 
         return view('/search')->with('data',$productSearch);
-=======
-        $imagens = Cadastrar::where('name','LIKE','%'.$search.'%')->get();
-        $image = Cadastrar::where('description','LIKE','%'.$search.'%')->get();
-        $type = Types::all();
-
-        return view('/aleatorio')->with('type',$type)->with('imagens', $imagens);
->>>>>>> e2906a43584f853ee31c54e11073f2af18df4033
 
     }
+
+    
  
 
 

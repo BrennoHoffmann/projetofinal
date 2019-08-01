@@ -25,5 +25,19 @@
     /* width: 100%; */
     margin-left: 23%;
 }
+.spaceDesc{
+    height: 40vh;
+    border: solid 1px;
+    border-radius:2%;
+    
+}
+.spacePrice{
 
+    border:solid 1px;
+    border-radius: 5%;
+}
+
+.spaceDesc h4 {
+    text-align: center;
+}
 
