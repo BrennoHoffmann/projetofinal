@@ -1,52 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>teste dessa porra</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-</head>
-
-<body>
-   
-
-    <form method="POST" action="/cadastrar" enctype="multipart/form-data" >
-        @csrf
-        
-               <input name="name" type="text" class="form-control" id="validationCustomUsername" placeholder="nome do produto"
-                    aria-describedby="inputGroupPrepend" required>
-                <div class="invalid-feedback">
-
-
-                <input name="price" type="decimal" class="form-control" id="validationCustomUsername" placeholder="preço"
-                    aria-describedby="inputGroupPrepend" required>
-
-                <input name="description" type="text" class="form-control" id="validationCustomUsername" placeholder="descrição"
-                    aria-describedby="inputGroupPrepend" required>                                
-                </div>
-
-            </div>
-        </div>
-        </div>
-
-        <div class="form-group">
-            <label for="exampleFormControlFile1">Exemplo de input de arquivo</label>
-            <input name="image" type="file" class="form-control-file" id="exampleFormControlFile1">
-        </div>
+@extends('template')
+@section('content')
+<link rel="stylesheet" href="Cadastrar.css">
+<form class="container col-lg-6" method="POST" action="/cadastrar" enctype="multipart/form-data">
+    @csrf
+    <h5><i>Product's name</h5>
+    <input name="name" type="text" class="form-control" id="validationCustomUsername" placeholder="nome do produto"
+        aria-describedby="inputGroupPrepend" required>
+    <hr>
+    <div class="d-flex justify-content-around">
+        <h5>Product Category</h5>
+        <label for="exampleFormControlSelect1"></label>
         <select name="type_id" id="type_id">
-        <option disabled selected>Escolha uma opção</option>
-           @if(isset($type))
-           @foreach($type as $tipo)
+            <option disabled selected>Choose an option</option>
+            @if(isset($type))
+            @foreach($type as $tipo)
             <option name="type" value="{{$tipo->id}}">{{$tipo->name}}</option>
             @endforeach
             @endif
         </select>
-         <button type="submit" class="btn btn-primary">Enviar</button> 
-    </form>
-    
-    
-</body>
-</html>
+    </div>
+    <hr>
+    <h5>Description of Product</h5>
+    <textarea name="description" type="text" class="form-control" id="validationCustomUsername"
+        placeholder="description" aria-describedby="inputGroupPrepend" required></textarea>
+    <hr>
+    <div class="d-flex">
+        <h5>Image of product</h5>
+        <label for="exampleFormControlFile1"></label>
+        <input name="image" type="file" class="form-control-file" id="exampleFormControlFile1">
+    </div>
+    <hr>
+
+    <h5>Valor do Produto</h5>
+    <label for="exampleFormControlTextarea1"></label><br>
+    <input name="price" type="decimal" class="form-control" id="validationCustomUsername" placeholder="preço"
+        aria-describedby="inputGroupPrepend" required>
+    <hr>
+    <div class="d-flex justify-content-lg-end buttonCadastro">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <hr>
+
+</form>
+
+@endsection
