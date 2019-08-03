@@ -2,31 +2,46 @@
 
 @section('content')
 <link rel="stylesheet" href="{{asset('css/KnowMore.css')}}">
-<section id="name">
+<section class="container" id="name">
     <div class="title">
-        <h1>{{$query->name}}</h1>
-    </div>
+       
+            <h1>{{$query->name}}</h1>
+            </div>
+        <div class="description">
+            <h4> <em> description of your product</em></h4>
+        </div>
+    
 </section>
 <section id="description">
     <div class="boxImage">
         <img class="imagePosition1" src="{{asset($query->image)}}" alt="">
     </div>
+
     <div class="price-description">
         <div class="spaceDesc">
             <p>
-                <h4> <em> description of your product</em></h4>
+
             </p>
-            -  {{$query->description}}
+            - {{$query->description}}
         </div>
         <hr>
+        <h4> <em> Price</em></h4>
         <div class="spacePrice">
             <p><em>R$<em> {{$query->price}}</p>
-            
+
         </div>
-        <div>
-        <input type="submit" value="Buy Now">
+        <hr>
+        <div >
+            <input class="button" type="submit" value="Buy Now">
         </div>
     </div>
+
+</section>
+<hr>
+<section>
+    <h2><i>See too</i></h2>
+        
+
 </section>
 
 

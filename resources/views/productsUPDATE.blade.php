@@ -1,3 +1,4 @@
+
 @extends ('template')
 
 @section ('content')
@@ -11,19 +12,23 @@
     alert('Product successful deleted')
 </script>
 @endisset
-<h1 class= 'container'><i>List Of Products</i></h1>
-
+<div class= "d-flex container justfy-content-center ">
+<h1 ><i>List Of Products</i></h1>
+</div>
 @foreach($viewAll as $view)
-<ul class = 'container'>   
-    <li>{{$view->name}} </li>
-    <li>{{$view->description}}</li>
-    <li>{{$view->price}} <</li>
-    <li>{{$view->image}} </li>
-    <a href="upDate/{{$view->id}}">upDate your Product</a>
-    <a href="delete/{{$view->id}}">delete your Product</a>
-<hr>
-</ul>
-
+<div class="card" style="{{$view->image}}">
+    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{$view->name}}</h5>   
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{$view->price}}</li>  
+    </ul>
+    <div class="card-body">
+        <a href="upDate/{{$view->id}}" class="card-link">upDate your Product</a>
+        <a href="delete/{{$view->id}}" class="card-link">delete your Product</a>
+    </div>
+</div>
 @endforeach
-
 @endsection
+

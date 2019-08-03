@@ -1,9 +1,21 @@
   /*view knowmore customization*/
   #name{
     display:flex;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     
+    
+}
+.title{
+    /* display:flex; */
+    justify-content: center;
+    width: 50%;
+}
+.description{
+    align-items: center;
+    width: 50%;
+    display: flex;
+    justify-content: ;
 }
 #description{
     display:flex;
@@ -26,7 +38,7 @@
     margin-left: 23%;
 }
 .spaceDesc{
-    height: 40vh;
+    height: 35vh;
     border: solid 1px;
     border-radius:2%;
     
@@ -40,4 +52,14 @@
 .spaceDesc h4 {
     text-align: center;
 }
+
+.button{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    background-color: #428EFE;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
 
