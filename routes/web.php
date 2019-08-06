@@ -88,3 +88,7 @@ Route::post('add', "CartController@add");
 
 Route::get('/cart/add/{idProduct}', "CartController@add");
 Route::get('/cart', "CartController@viewCart");
+
+
+
+
