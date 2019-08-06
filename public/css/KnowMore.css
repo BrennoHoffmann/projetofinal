@@ -28,7 +28,7 @@
     width: 40%;
 }
 .boxImage{
-    border:solid 1px;
+    /* border:solid 1px; */
     width: 40%;
     justify-content: center;
     border-radius: 2%;
@@ -39,13 +39,13 @@
 }
 .spaceDesc{
     height: 35vh;
-    border: solid 1px;
+    /* border: solid 1px; */
     border-radius:2%;
     
 }
 .spacePrice{
 
-    border:solid 1px;
+    /* border:solid 1px; */
     border-radius: 5%;
 }
 
@@ -61,5 +61,4 @@
     color: white;
     font-family: 'Lato', sans-serif;
 }
-
-
+    

@@ -22,7 +22,7 @@
     <header>
         <nav class="navbar navbar-expand-lg  d-flex justify-content-between">
             <a href="/">
-                <img src="{{asset('imagens/polvopi.png')}}" alt="logo" width="150px" height="75px">
+                <img src="{{asset('Imagens/polvopi.png')}}" alt="logo" width="150px" height="75px">
             </a>
 
             <div id="cssmenu">
