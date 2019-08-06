@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
-class CardController extends Controller
+class CartController extends Controller
 {
     
  public function add(Request $res, $idProduct){
@@ -29,11 +29,12 @@ class CardController extends Controller
     $products = [];
 
     for ($i=0; $i < count($cart); $i++) { 
+        
         $products[]=Product::find($cart[$i]);
     }
     dd($products);
 
-    return view('shopcart', ['products' => $products, ]);
+    return view('cart', ['products' => $products, ]);
  }
     
 }
