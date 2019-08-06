@@ -16,8 +16,8 @@
 <h1 ><i>List Of Products</i></h1>
 </div>
 @foreach($viewAll as $view)
-<div class="card" style="{{$view->image}}">
-    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
+<div class="card" style="width:18rem">
+    <img class="card-img-top" src="{{$view->image}}" alt="Card image cap">
     <div class="card-body">
         <h5 class="card-title">{{$view->name}}</h5>   
     </div>

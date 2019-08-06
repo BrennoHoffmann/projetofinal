@@ -17,9 +17,9 @@ class createAdmin extends Seeder
         $brenno->name = "Brenno";
         $brenno->email = "brenno_email.com";
         $brenno->password = Hash::make("12345678");
-        $brenno->admin = 1;
+        $brenno->admin = 0;
 
-        $brenno->save()
-;
+        $brenno->save();
+
     }
 }
