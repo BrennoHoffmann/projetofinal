@@ -32,7 +32,7 @@
         </div>
         <hr>
         <div >
-            <input class="button" type="submit" value="Buy Now">
+            <a href="/cart/add/{idProduct}" class="btn btn-primary" type="submit"> Buy now</a>
         </div>
     </div>
 
