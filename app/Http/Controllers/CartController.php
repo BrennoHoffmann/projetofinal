@@ -28,11 +28,15 @@ class CartController extends Controller
     $cart = $res->session()->get('cart');
     $products = [];
 
+    if ($cart == null) {
+        return view('cart', ['products' =>[]] );
+    }
+
     for ($i=0; $i < count($cart); $i++) { 
         
         $products[]=Product::find($cart[$i]);
     }
-    dd($products);
+    
 
     return view('cart', ['products' => $products, ]);
  }
