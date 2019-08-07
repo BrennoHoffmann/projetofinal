@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fascinate&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cousine|Julius+Sans+One|Staatliches|Ultra|Unica+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Kaushan+Script|Lobster|Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
 
 .imgCarr img{
     height: 85vh;
@@ -68,7 +69,7 @@ section .custons {
 }
 
 #botaologin{
-  background-color: #297EFE;
+  background-color: #6d78b0;
 }
 
   .cardpromotion{
@@ -267,7 +268,7 @@ body{
   padding: 12px 30px 12px 45px; /* Adjusting padding to get the proper space */
   margin-left: -20px; /* Pull the items to the left, so the rounded right side will get over them */
   color: white;
-  background-color: #428EFE;
+  background-color: #6d78b0;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 0 100px 100px 0; /* Get the right side rounded */
@@ -275,10 +276,11 @@ body{
 }
 #cssmenu ul li a#homestyle{
   border-radius: 40px;
+  
 }
 
 #cssmenu ul li:hover a {
-  background-color: #297EFE;
+  background-color: #6d58b0;
 }
 
 /* Remove the shadow for first item, last in the right side when it gets reversed */
@@ -409,7 +411,7 @@ margin-left: 31%;
 }
 
 .footerr{
-  background-color:cadetblue;
+  background-color:rgb(196, 214, 214);
 }
 
 .footerrr{
@@ -421,6 +423,7 @@ input[type=text] {
     -webkit-transition: width 0.6s ease-in-out;
     transition: width 0.4s ease-in-out;
     border-radius: 20px;
+    
   }
   
   /* When the input field gets focus, change its width to 100% */
@@ -430,7 +433,7 @@ input[type=text] {
   }
 
   .fundoabout{
-    background-color: cadetblue;
+    background-color:#6d78b0;
     height:188px;
     width:  ;
   }
@@ -442,9 +445,21 @@ input[type=text] {
 }
  */
 
-#cudecavalo{
-  border-radius: 30px;
+#botaosrc{
+  border-radius: 50px;
   outline: none;
-  background-color: cadetblue;
+  background-color: #6d78b0;
+  border: none;
+  height: 30px;
+  width: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.jumbs{
+  font-family: 'Carter One', sans-serif;
 }
  
+#sliders{
+  width: 1000px;
+  height:500px;
+}

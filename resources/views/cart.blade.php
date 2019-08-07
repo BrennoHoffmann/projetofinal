@@ -38,13 +38,13 @@
         </div>
     </div>
 </nav>
-<section class="jumbotron text-center">
-    <div class="container">
+<section id=""class="jumbotron jumbs text-center">
+    <div class="container ">
         <h1 class="jumbotron-heading">Check your products</h1>
      </div>
 </section>
 
-<div class="container mb-4">
+<div class=" jumbs container mb-4">
     <div class="row">
         <div class="col-12">
             <div class="table-responsive">
@@ -71,7 +71,7 @@
                             <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                         </tr>
                         @empty
-                        <div class="container mb-4">
+                        <div class="container mb-4 d-flex justify-content-center">
                             <h1>Empty cart, please select a product</h1>
                         </div>
                         @endforelse
