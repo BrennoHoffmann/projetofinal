@@ -34,6 +34,8 @@ class shopController extends Controller
             $newItemOrder->orders_id = $newOrder->id;
             $newItemOrder->save();
         }
+        $res->session ()->flush();
+        return redirect('home');
         
     }else {
         $cart = [$idProduct];

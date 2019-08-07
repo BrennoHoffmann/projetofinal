@@ -17,7 +17,6 @@ class ItemOrder extends Migration
             $table->bigIncrements('id');
             $table->biginteger('product_id')->references('id')->on('product');
             $table->biginteger('orders_id')->references('id')->on('orders');
-            $table->integer('amount');
             $table->rememberToken();
             $table->timestamps();
         });
