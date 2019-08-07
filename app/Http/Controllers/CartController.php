@@ -4,41 +4,44 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use Illuminate\Support\Collection;
+
 class CartController extends Controller
 {
+    public function list(){
+        $products = Product::all();
+        return view('/cart', ['products'=>$products]);
+    }
+   
     
  public function add(Request $res, $idProduct){
      //pergunta se existe uma sessão ativa
     
-    if($res->session()->has('cart')){
+    if($res->session()->has('cart')){ 
         $cart = $res->session()->get('cart');
         
-        $cart[] = [$idProduct];
+        $cart[] = $idProduct;
         $res->session()->put('cart', $cart);
-        return "Deu bom caralho";
+        return redirect('/cart');
         
     }else {
-        $cart = [[$idProduct]];
+        $cart = [$idProduct];
         $res->session()->put('cart', $cart);
-        return "Deu bom ";
+        return redirect('/cart');
     }
  }
  public function viewCart(Request $res)
  {
+    
     $cart = $res->session()->get('cart');
-    $products = [];
-
     if ($cart == null) {
         return view('cart', ['products' =>[]] );
     }
 
-    for ($i=0; $i < count($cart); $i++) { 
-        
-        $products[]=Product::find($cart[$i]);
-    }
-    
+   $products = Product::find($cart);
+   //  dd($products);
 
-    return view('cart', ['products' => $products, ]);
+    return view('cart', ['products' => $products ]);
  }
     
 }

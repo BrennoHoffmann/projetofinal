@@ -40,7 +40,7 @@
 </nav>
 <section class="jumbotron text-center">
     <div class="container">
-        <h1 class="jumbotron-heading">E-COMMERCE CART</h1>
+        <h1 class="jumbotron-heading">Check your products</h1>
      </div>
 </section>
 
@@ -60,17 +60,21 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($products as $product)
+                    
+                    @forelse($products as $product)
                         <tr>
-                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td> </td>
+                            <td><img width="80px"src="{{$product->image}}" /> </td>
+                            <td>{{$product->name}} </td>
                             <td>In stock</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">124,90 €</td>
+                            <td><input class="form-control" type="number" value="1" /></td>
+                            <td class="text-right">{{$product->price}}</td>
                             <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                         </tr>
-                        @endforeach
-
+                        @empty
+                        <div class="container mb-4">
+                            <h1>Empty cart, please select a product</h1>
+                        </div>
+                        @endforelse
 
 
                     </tbody>
@@ -80,10 +84,10 @@
         <div class="col mb-2">
             <div class="row">
                 <div class="col-sm-12  col-md-6">
-                    <button class="btn btn-block btn-light"><a href="/">Continuar comprando</a></button>
+                    <button class="btn btn-block btn-light"><a href="/">Keep buying</a></button>
                 </div>
                 <div class="col-sm-12 col-md-6 text-right">
-                    <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
+                    <button class="btn btn-block btn-light text-uppercase"><a href="/finishingOrder/add/{id}">Finish</a></button>
                 </div>
             </div>
         </div>
