@@ -1,28 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+@extends('template')
+@section('content')
 
-@if(@isset($dados))
-<ul class="resultado">
-    @foreach ($data as $dat)      
+@if(@isset($filter))
+<h1 class=" justify-content-center d-flex" >Result your search</h1>
+<div class=" justify-content-center d-flex ">
+
+    @foreach ($filter as $dat)      
+   
     <div class="card" style="width: 18rem;">
-        <p>{{$dat->name}}</p>
+        
         <img class="card-img-top" src="{{$dat->image}}" alt="Imagem de capa do card">
         <div class="card-body">
-             <p class="card-text">{{$dat->descripton}}</p>
+             
+       
         </div>
+       
     </div>
-
+    <div>
+    
+    </div>
     @endforeach
     
-</ul>
+</div>
 @endif
 
-</body>
-</html>
+@endsection

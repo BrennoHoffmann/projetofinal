@@ -39,7 +39,6 @@ Route::post('/cadastrar', 'CadastrarController@Cadastrar');
 //Route::get('/aleatorio', 'CadastrarController@buscar');
 
 Route::get('/search', 'CadastrarController@search');
-Route::post('/search', 'CadastrarController@search');
 
 Route::get('/', 'HomeController@product');
 Route::post('/','HomeController@product');

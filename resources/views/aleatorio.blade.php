@@ -23,12 +23,8 @@
       
     <select name="search_tipos" id="search_tipos">
     <option disabled selected> selecione uma categoria</option>
-<<<<<<< HEAD
 
    <!-- @foreach($tipos as $tipo)
-=======
-    @foreach($type as $tipo)
->>>>>>> e2906a43584f853ee31c54e11073f2af18df4033
             <option name="type" value="{{$tipo->id}}">{{$tipo->name}}</option>
     @endforeach -->
     </select>

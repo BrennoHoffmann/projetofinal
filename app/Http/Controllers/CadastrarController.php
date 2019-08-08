@@ -63,12 +63,12 @@ class CadastrarController extends Controller
         $data = Types::where('name','LIKE', '%'.$search.'%')->first();
         $idSearch = $data->id;
         $productSearch = Cadastrar::where('type_id','=',$idSearch)->get();
-                
+       
         //$image = Cadastrar::where('description','LIKE','%'.$search.'%')->get();
         $types = Cadastrar::all();
         
 
-        return view('/search')->with('data',$productSearch);
+        return view('/search')->with('filter',$productSearch);
 
     }
 

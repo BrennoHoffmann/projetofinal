@@ -35,7 +35,7 @@
                     <li><a href="/" id="homestyle"><i class="fa fa-home"></i>Home</a></li>
                 </ul>
             </div>
-            <form action="/busca" method="POST" id="pesquisa">
+            <form action="/search" method="GET" id="pesquisa">
                 @csrf
                 <input type="text" name="search" id="seacher" placeholder="you seek...">
                 <input id="botaosrc" type="submit" name="enviar" value="search">
