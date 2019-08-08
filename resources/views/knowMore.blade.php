@@ -32,7 +32,7 @@
         </div>
         <hr>
         <div >
-            <a href="/cart/add/{idProduct}" class="btn btn-primary" type="submit"> Buy now</a>
+            <a href="/cart/add/{{$query->id}}" class="btn btn-primary" type="submit"> Buy now</a>
         </div>
     </div>
 

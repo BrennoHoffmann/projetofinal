@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg  d-flex justify-content-between">
             <a href="/">
-                <img src="{{asset('Imagens/polvopi.png')}}" alt="logo" width="150px" height="75px">
+                <img src="{{asset('Imagens/polvopii.png')}}" alt="logo" width="150px" height="150px">
             </a>
 
             <div id="cssmenu">
@@ -38,7 +38,7 @@
             <form action="/busca" method="POST" id="pesquisa">
                 @csrf
                 <input type="text" name="search" id="seacher" placeholder="you seek...">
-                <input id="cudecavalo" type="submit" name="enviar" value="search">
+                <input id="botaosrc" type="submit" name="enviar" value="search">
 
             </form>
            
@@ -97,7 +97,7 @@
     <br>
     <br>
 
-    <footer class="page-footer font-small blue pt-4">
+    <footer class=" jumbs page-footer font-small blue pt-4">
         <div class="container-fluid text-center text-md-left footerrr">
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3 flipcardpalmeiras">
@@ -116,7 +116,7 @@
                 <hr class="clearfix w-100 d-md-none pb-3">
 
                 <div class="col-md-3 mb-md-0 mb-3 flipcardpalmeiras">
-                    <h5 class="text-uppercase">lojas fisicas</h5>
+                    <h5 style="margin-top: 30px;"class="text-uppercase">lojas fisicas</h5>
                     <ul class="list-unstyled">
                         <li>
                             <a href="#!">renner</a>
@@ -134,7 +134,7 @@
                 </div>
 
                 <div class="col-md-3 mb-md-0 mb-3 flipcardpalmeiras">
-                    <h5 class="text-uppercase">redes sociais</h5>
+                    <h5 style="margin-top: 30px;" class="text-uppercase">redes sociais</h5>
                     <ul class="list-unstyled">
                         <li>
                             <a href="https://www.linkedin.com">linkedin</a>

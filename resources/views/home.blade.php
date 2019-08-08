@@ -13,13 +13,13 @@
     </ol>
     <div class="carousel-inner m-0 carrossel1">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="../Imagens/promocao1.jpg" alt="First slide">
+            <img id="sliders" class="d-block w-100" src="../Imagens/banner1.png" alt="First slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="../Imagens/promocao3.jpg" alt="Second slide">
+            <img id="sliders" class="d-block w-100" src="../Imagens/banner2.png" alt="Second slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="../Imagens/promocao2.jpg" alt="Third slide">
+            <img id="sliders" class="d-block w-100" src="../Imagens/banner3.png" alt="Third slide">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
