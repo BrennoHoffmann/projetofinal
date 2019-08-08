@@ -16,7 +16,7 @@
             <img id="sliders" class="d-block w-100" src="../Imagens/banner1.png" alt="First slide">
         </div>
         <div class="carousel-item">
-            <img id="sliders" class="d-block w-100" src="../Imagens/banner2.png" alt="Second slide">
+            <img id="sliders" class="d-flex w-100" src="../Imagens/banner2.png" alt="Second slide">
         </div>
         <div class="carousel-item">
             <img id="sliders" class="d-block w-100" src="../Imagens/banner3.png" alt="Third slide">

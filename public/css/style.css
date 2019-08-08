@@ -50,10 +50,10 @@ section .custons {
     margin-top: 40px;
 }
 
-.carrosel1{
+/* .carrosel1{
     background-color:#3594c3;
     justify-content: first baseline;
-}
+} */
 
 .cardsection{
     justify-content: center;
@@ -448,9 +448,6 @@ input[type=text] {
 #botaosrc{
   border-radius: 50px;
   outline: none;
-<<<<<<< HEAD
-  background-color: cadetblue;
-=======
   background-color: #6d78b0;
   border: none;
   height: 30px;
@@ -463,7 +460,6 @@ input[type=text] {
 }
  
 #sliders{
-  width: 1000px;
+  width: 1500px;
   height:590px;
->>>>>>> 70ed5611f53d14767e7b4a4c7c715edc1d357456
 }
