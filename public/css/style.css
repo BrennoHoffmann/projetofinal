@@ -432,7 +432,7 @@ input[type=text] {
   .fundoabout{
     background-color: cadetblue;
     height:188px;
-    width:  ;
+    /* width:  ; */
   }
 /*botao do cadastro*/
 /* .cardPrincipal{
@@ -447,4 +447,3 @@ input[type=text] {
   outline: none;
   background-color: cadetblue;
 }
- 

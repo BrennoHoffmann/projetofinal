@@ -28,6 +28,7 @@ class UpDateController extends Controller
         $product->description = $request->description;
         $product->price = $request->price;
         $product->type_id = $request->type;
+        $product->stock = $request->stock;
 
         $product->save();
         $viewAll = Product::all();

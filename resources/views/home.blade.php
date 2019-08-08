@@ -1,10 +1,11 @@
 @extends('template')
 
 @section('content')
+<link rel="stylesheet" href="homestyle.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide container carrossel1" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -35,19 +36,19 @@
 
 <div class="container">
     <div class="row">
-            @foreach($dados as $card)
-            <div class="shirt3 col-sm text-center mt-5">
-                <img src="{{$card->image}}" alt="Avatar" style="width:300px;height:300px;">
-                <h1>{{$card->name}}</h1>
-                <p>R${{$card->price}}</p>
-                <a href="knowMore/{{$card->id}}"><br>Know more</a>
-              </div>
-              @endforeach
-            <!-- <div class="flip-card"> -->
-            <!-- <div class="flip-card-inner"> -->
-            <!-- <div class="flip-card-back"> -->
+        @foreach($dados as $card)
+        <div class="shirt3 col-sm text-center mt-5">
+            <img src="{{$card->image}}" alt="Avatar" style="width:300px;height:300px;">
+            <h1>{{$card->name}}</h1>
+            <p>R${{$card->price}}</p>
+            <a href="knowMore/{{$card->id}}"><br>Know more</a>
         </div>
+        @endforeach
+        <!-- <div class="flip-card"> -->
+        <!-- <div class="flip-card-inner"> -->
+        <!-- <div class="flip-card-back"> -->
     </div>
+</div>
 </div>
 
 

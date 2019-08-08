@@ -71,6 +71,9 @@ Route::put('upDate/{id}','UpDateController@changing');
 Route::get('delete/{id}','UpDateController@delete');
 Route::delete('delete/{id}','UpDateController@showDelete');
 
+Route::get('admin','AdminController@table');
+Route::post('admin','AdminController@table'); 
+
 
 
 

@@ -37,7 +37,8 @@ class CadastrarController extends Controller
             'type_id'=>$request->input('type_id'),
             'description'=>$request->input('description'),
             'price'=>$request->input('price'),
-            'name'=>$request->input('name')
+            'name'=>$request->input('name'),
+            'stock'=>$request->input('stock')
         ]);
 
         return redirect('/cadastrar');
