@@ -19,7 +19,7 @@
     </div>
     <hr>
     <h5>Product's Name</h5>
-    <input name="price" type="decimal" class="form-control" id="validationCustomUsername" placeholder="Products"
+    <input name="name" type="decimal" class="form-control" id="validationCustomUsername" placeholder="Products"
         aria-describedby="inputGroupPrepend" required>
     <hr>
     <h5>Description of Product</h5>

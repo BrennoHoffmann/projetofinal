@@ -5,13 +5,14 @@
 <section class="container" id="name">
     <div class="title">
        
-            <h1>{{$query->name}}</h1>
             </div>
         <div class="description">
             <h4> <em> description of your product</em></h4>
         </div>
     
 </section>
+<h1>{{$query->name}}</h1>
+
 <section id="description">
     <div class="boxImage">
         <img class="imagePosition1" src="{{asset($query->image)}}" alt="">
@@ -37,12 +38,7 @@
     </div>
 
 </section>
-<hr>
-<section>
-    <h2><i>See too</i></h2>
-        
 
-</section>
 
 
 

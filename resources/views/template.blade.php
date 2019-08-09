@@ -37,7 +37,7 @@
             </div>
             <form action="/search" method="GET" id="pesquisa">
                 @csrf
-                <input type="text" name="search" id="seacher" placeholder="you seek...">
+                <input type="text" name="search" id="searcher" placeholder="you seek...">
                 <input id="botaosrc" type="submit" name="enviar" value="search">
 
             </form>
