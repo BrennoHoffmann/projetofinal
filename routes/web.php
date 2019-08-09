@@ -94,7 +94,7 @@ Route::get('/cart', "CartController@viewCart");
 
 //rota pra comprar
 
-Route::get('/finishingOrder/add/{id}', "shopController@add");
+Route::get('/finishingOrder/add/{id}', "shopController@add")->middleware("auth");
 
 
 
