@@ -11,6 +11,6 @@ class CriarProduto extends Seeder
      */
     public function run()
     {
-        //
+        
     }
 }
