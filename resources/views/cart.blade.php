@@ -87,7 +87,7 @@
                 <div class="col-sm-12  col-md-6">
                     <button class="btn btn-block btn-light"><a href="/">Keep buying</a></button>
                 </div>
-                <div class="col-sm-12 col-md-6 text-right">
+                <div class="col-sm-12 col-md-6 text-right lol">
                     <button class="btn btn-block btn-light text-uppercase"><a href="/finishingOrder/add/{id}">Finish</a></button>
                 </div>
             </div>

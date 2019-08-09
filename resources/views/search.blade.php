@@ -2,19 +2,17 @@
 @section('content')
 
 @if(@isset($filter))
-<h1 class=" justify-content-center d-flex" >Result your search</h1>
+<h1 class=" justify-content-center d-flex" >Results</h1>
 <div class=" justify-content-center d-flex ">
 
     @foreach ($filter as $dat)      
    
-    <div class="card" style="width: 18rem;">
+    <div class="card justify-content-center d-flex" style="width: 18rem; ">
         
         <img class="card-img-top" src="{{$dat->image}}" alt="Imagem de capa do card">
-        <div class="card-body">
-             
-       
+        <div class="card-body justify-content-center d-flex">
         </div>
-       
+        <a class="btn btn-success" href="/cart/add/{{$dat->id}}">Buy now</a>
     </div>
     <div>
     

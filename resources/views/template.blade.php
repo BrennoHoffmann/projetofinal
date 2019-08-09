@@ -34,7 +34,7 @@
             </div>
             <form action="/search" method="GET" id="pesquisa">
                 @csrf
-                <input type="text" name="search" id="seacher" placeholder="you seek...">
+                <input type="text" name="search" id="searcher" placeholder="you seek...">
                 <input id="botaosrc" type="submit" name="enviar" value="search">
 
             </form>
@@ -150,7 +150,7 @@
         </div>
 
         <div class="footer-copyright text-center py-3 footerr flipcardpalmeiras">© 2019 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> PAVÃO RAFÃO E BRENNO DA MASSA</a>
+            <a href="/"> PAVÃO RAFÃO E BRENNO DA MASSA</a>
         </div>
 
     </footer>

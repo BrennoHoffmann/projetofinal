@@ -2,16 +2,18 @@
 
 @section('content')
 <link rel="stylesheet" href="{{asset('css/KnowMore.css')}}">
-<section class="container" id="name">
+<section class="col-lg-12" id="name">
     <div class="title">
+    <h1>{{$query->name}}</h1>
        
-            <h1>{{$query->name}}</h1>
             </div>
         <div class="description">
-            <h4> <em> description of your product</em></h4>
+            <h2>  Description of your product:</h2>
         </div>
     
 </section>
+
+
 <section id="description">
     <div class="boxImage">
         <img class="imagePosition1" src="{{asset($query->image)}}" alt="">
@@ -19,30 +21,22 @@
 
     <div class="price-description">
         <div class="spaceDesc">
-            <p>
-
-            </p>
-            - {{$query->description}}
+            <h3 style="margin-top: 80px; d-flex justify-content-center">
+            {{$query->description}}
+            </h3>
         </div>
-        <hr>
         <h4> <em> Price</em></h4>
         <div class="spacePrice">
-            <p><em>R$<em> {{$query->price}}</p>
+            <p>R$ {{$query->price}}</p>
 
         </div>
-        <hr>
         <div >
-            <a href="/cart/add/{{$query->id}}" class="btn btn-primary" type="submit"> Buy now</a>
+            <a href="/cart/add/{{$query->id}}" class="btn btn-dark  " type="submit"> Buy now</a>
         </div>
     </div>
 
 </section>
-<hr>
-<section>
-    <h2><i>See too</i></h2>
-        
 
-</section>
 
 
 
