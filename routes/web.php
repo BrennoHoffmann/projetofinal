@@ -91,6 +91,8 @@ Route::post('add', "CartController@add");
 Route::get('/cart/add/{id}', "CartController@add");
 Route::get('/cart', "CartController@viewCart");
 
+Route::get('/cart/delete/{id}','CartController@delete');
+
 
 //rota pra comprar
 

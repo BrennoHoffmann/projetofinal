@@ -43,4 +43,6 @@ class shopController extends Controller
         return redirect('/cart');
     }
  }
+
+
 }

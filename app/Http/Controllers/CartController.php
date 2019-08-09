@@ -32,6 +32,7 @@ class CartController extends Controller
  }
  public function viewCart(Request $res)
  {
+     //session()->flush();
     
     $cart = $res->session()->get('cart');
     if ($cart == null) {
@@ -43,5 +44,19 @@ class CartController extends Controller
 
     return view('cart', ['products' => $products ]);
  }
+
+ public function delete(Request $request,$id){
+    $cart = $request->session()->get('cart');
+
+    $searchArray = array_search($id,$cart);
+
+    unset($cart[$searchArray]);
+
+    $request->session()->put('cart',$cart);
+  
+    return redirect('/cart');
+     
+ }
+
     
 }

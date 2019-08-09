@@ -67,8 +67,9 @@
                             <td>{{$product->name}} </td>
                             <td>In stock</td>
                             <td><input class="form-control" type="number" value="1" /></td>
-                            <td class="text-right">{{$product->price}}</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                            <td class="text-right">{{$product->price}}</td>                           
+                            
+                            <td class="text-right"><a href= '/cart/delete/{{$product->id}}' class="btn btn-sm btn-danger" <i class="fa fa-trash"</i> </a> </td>
                         </tr>
                         @empty
                         <div class="container mb-4 d-flex justify-content-center">
