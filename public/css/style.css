@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cousine|Julius+Sans+One|Staatliches|Ultra|Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Francois+One|Kaushan+Script|Lobster|Saira+Stencil+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
 
 .imgCarr img{
     height: 85vh;
@@ -196,7 +197,7 @@ input#searcher{
   
 .letralogo {
   color: black;
-  font-family: 'Unica One', sans-serif;
+  font-family: 'Concert One', cursive;
 }
 
 #linha{
@@ -455,7 +456,7 @@ input#searcher {
 }
 
 .jumbs{
-  font-family: 'Carter One', sans-serif;
+  font-family: 'Concert One', cursive;
 }
  
 #sliders{

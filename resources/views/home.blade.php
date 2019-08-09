@@ -40,8 +40,8 @@
         <div class="shirt3 col-sm text-center mt-5">
             <img src="{{$card->image}}" alt="Avatar" style="width:300px;height:300px;">
             <h1>{{$card->name}}</h1>
-            <p>R${{$card->price}}</p>
-            <a href="knowMore/{{$card->id}}"><br>Know more</a>
+            <h4>R${{$card->price}}</h4>
+            <a class="btn btn-light" href="knowMore/{{$card->id}}">Buy know</a>
         </div>
         @endforeach
         <!-- <div class="flip-card"> -->
