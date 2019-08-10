@@ -100,4 +100,3 @@ Route::get('/finishingOrder/add/{id}', "shopController@add")->middleware("auth")
 
 
 
-

@@ -38,7 +38,7 @@
         </div>
     </div>
 </nav>
-<section id=""class="jumbotron jumbs text-center">
+<section id=""class="jumbotron jumbs text-center " style="background-color:  #6d78b0;">
     <div class="container ">
         <h1 class="jumbotron-heading">Check your products</h1>
      </div>
@@ -69,7 +69,7 @@
                             <td><input class="form-control" type="number" value="1" /></td>
                             <td class="text-right">{{$product->price}}</td>                           
                             
-                            <td class="text-right"><a href= '/cart/delete/{{$product->id}}' class="btn btn-sm btn-danger" <i class="fa fa-trash"</i> </a> </td>
+                            <td class="text-right"><a href= '/cart/delete/{{$product->id}}' class="btn btn-sm btn-danger">delete <i class="fa fa-trash"</i> </a> </td>
                         </tr>
                         @empty
                         <div class="container mb-4 d-flex justify-content-center">
