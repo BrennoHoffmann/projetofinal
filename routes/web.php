@@ -98,5 +98,9 @@ Route::get('/cart/delete/{id}','CartController@delete');
 
 Route::get('/finishingOrder/add/{id}', "shopController@add")->middleware("auth");
 
+Route::get('/finishbuy', function () {
+    return view('finishbuy');
+});
+
 
 

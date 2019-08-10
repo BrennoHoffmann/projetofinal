@@ -35,7 +35,8 @@ class shopController extends Controller
             $newItemOrder->save();
         }
         $res->session ()->flush();
-        return redirect('home');
+        
+        return redirect('finishbuy');
         
     }else {
         $cart = [$idProduct];
