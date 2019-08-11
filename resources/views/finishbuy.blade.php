@@ -9,8 +9,8 @@
     <title>Uhulll</title>
 </head>
 <body>
-    <h1>
-        SUCESSO CARA, VOCÊ COMPROU SUA CAMISA!!!
+    <h1 class="justify-content-center d-flex jumbotron">
+        SUCESSO, SUA COMPRA FOI EFETUADA!!!
     </h1>
 
 @endsection
