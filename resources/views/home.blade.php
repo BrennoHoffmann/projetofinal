@@ -41,7 +41,7 @@
             <img src="{{$card->image}}" alt="Avatar" style="width:300px;height:300px;">
             <h1>{{$card->name}}</h1>
             <h4>R${{$card->price}}</h4>
-            <a class="btn btn-light" href="knowMore/{{$card->id}}">Buy now</a>
+            <a style="background-color: #9A5EBA;"class="btn btn" href="knowMore/{{$card->id}}">Buy now</a>
         </div>
         @endforeach
         <!-- <div class="flip-card"> -->
