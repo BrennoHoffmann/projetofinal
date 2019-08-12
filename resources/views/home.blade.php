@@ -38,7 +38,7 @@
     <div class="row">
         @foreach($dados as $card)
         <div class="shirt3 col-sm text-center mt-5">
-            <img src="{{$card->image}}" alt="Avatar" style="width:300px;height:300px;">
+            <a href="knowMore/{{$card->id}}"><img src="{{$card->image}}" alt="Avatar" style="width:300px;height:300px;"></a>
             <h1>{{$card->name}}</h1>
             <h4>R${{$card->price}}</h4>
             <a style="background-color: #6d78b0; color:white;"class="btn btn" href="knowMore/{{$card->id}}">Buy now</a>
