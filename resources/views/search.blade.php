@@ -12,7 +12,7 @@
         <img class="card-img-top" src="{{$dat->image}}" alt="Imagem de capa do card">
         <div class="card-body justify-content-center d-flex">
         </div>
-        <a class="btn btn-dark" href="/cart/add/{{$dat->id}}">Buy now</a>
+        <a style="background-color: #9A5EBA;"class="btn btn-dark" href="/cart/add/{{$dat->id}}">Buy now</a>
     </div>
     <div>
     
