@@ -28,14 +28,13 @@
 
                     <li><a href="outlet">Outlet</a></li>
                     <li><a href="about">About</a></li>
-                    <li><a href="products">Products</a></li>
                     <li><a href="/" id="homestyle"><i class="fa fa-home"></i>Home</a></li>
                 </ul>
             </div>
             <form action="/search" method="GET" id="pesquisa">
                 @csrf
-                <input type="text" name="search" id="searcher" placeholder="you seek...">
-                <input id="botaosrc" type="submit" name="enviar" value="search">
+                <input type="text" name="search" id="searcher" placeholder="">
+                <input id="botaosrc" type="submit" name="enviar" value="Search">
 
             </form>
            
@@ -115,34 +114,34 @@
                     <h5 style="margin-top: 30px;"class="text-uppercase">lojas fisicas</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">renner</a>
+                            <a href="#!">Renner</a>
                         </li>
                         <li>
-                            <a href="#!">c&a</a>
+                            <a href="#!">C&A</a>
                         </li>
                         <li>
-                            <a href="#!">riachuelo</a>
+                            <a href="#!">Riachuelo</a>
                         </li>
                         <li>
-                            <a href="https://www.centauro.com.br/">centauro</a>
+                            <a href="https://www.centauro.com.br/">Centauro</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-md-3 mb-md-0 mb-3 flipcardpalmeiras">
-                    <h5 style="margin-top: 30px;" class="text-uppercase">redes sociais</h5>
+                    <h5 style="margin-top: 30px;" class="text-uppercase">Redes sociais</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="https://www.linkedin.com">linkedin</a>
+                            <a href="https://www.linkedin.com/in/brennohoffmannfullstack/">Linkedin</a>
                         </li>
                         <li>
-                            <a href="https://www.twitter.com">twitter</a>
+                            <a href="https://www.twitter.com">Twitter</a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com">facebook</a>
+                            <a href="https://www.facebook.com">Facebook</a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com">instagram</a>
+                            <a href="https://www.instagram.com">Instagram</a>
                         </li>
                     </ul>
                 </div>
