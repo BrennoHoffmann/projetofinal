@@ -34,7 +34,7 @@ class shopController extends Controller
             $newItemOrder->orders_id = $newOrder->id;
             $newItemOrder->save();
         }
-        $res->session ()->flush();
+        $res->session ()->forget('cart');
         
         return redirect('finishbuy');
         

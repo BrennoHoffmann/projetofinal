@@ -15,7 +15,6 @@ Route::get('/products', function () {
     return view('products');
 });
 
-
 Route::get('/outlet', function () {
     return view('outlet');
 });
@@ -28,15 +27,8 @@ Route::get('/about', 'AboutController@about')->name('about');
 
 Route::get('/logout', 'LoginController@logout');
 
-
 Route::get('/cadastrar', 'CadastrarController@rotaCadastrar');
 Route::post('/cadastrar', 'CadastrarController@Cadastrar');
-
-//Route::get('/aleatorio', 'CadastrarController@index');
-
-//Route::post('/aletorio', 'CadastrarController@buscar');
-
-//Route::get('/aleatorio', 'CadastrarController@buscar');
 
 Route::get('/search', 'CadastrarController@search');
 
@@ -72,19 +64,6 @@ Route::delete('delete/{id}','UpDateController@showDelete');
 
 Route::get('admin','AdminController@table');
 Route::post('admin','AdminController@table'); 
-
-
-
-
-
-
-
-// Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin']], function(){
-//     Route::get('/cadastrar', function(){
-//         return view('cadastrar');
-
-//     });
-// });
 
 Route::post('add', "CartController@add");
 
