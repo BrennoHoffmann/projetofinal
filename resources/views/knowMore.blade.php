@@ -31,7 +31,7 @@
 
         </div>
         <div >
-            <a href="/cart/add/{{$query->id}}" class="btn btn-dark  " type="submit"> Buy now</a>
+            <a href="/cart/add/{{$query->id}}" style="background-color: #6d78b0; color:white;" class="btn " type="submit"> Buy now</a>
         </div>
     </div>
 
